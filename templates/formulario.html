@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="templates/lista.html">Listas</a>
+        <a href="templates/galeria.html">Galeria</a>
+        <a href="templates/tabla.html">Tabla</a>
+        <a href="formulario.html" target="_blank">Formulario</a>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+      </nav>
+    </header>
+    <br /><br />
+    <hr />
+    <main>
+      <section>
+        <form>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required/>
+          </div>
+
+          <br />
+
+          <div>
+            <label for="apellido">Apellido</label>
+            <input type="tex" name="apellido" id="name" />
+          </div>
+
+          <br />
+
+          <div>
+            <label for="fn">Fecha de nacimiento</label>
+            <input type="date" name="fn" id="fn" />
+          </div>
+
+          <br />
+
+          <div>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="18" />
+          </div>
+
+          <div>
+            <label for="genero">Seleccione un género</label>
+            <select name="genero" id="genero">
+              <option value="M">M</option>
+              <option value="F">F</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <h3>Seleccione area a desarrollarse</h3>
+
+            <input type="radio" name="area" id="app-web" value="app-web" />
+            <label for="app-web">App web</label>
+
+            <input type="radio" name="area" id="datos" value="datos" />
+            <label for="datos">Analisis de datos</label>
+
+            <input type="radio" name="area" id="juegos" value="juegos" />
+            <label for="juegos">Desarrolo de juegos</label>
+
+            <br />
+            <hr />
+
+            <div>
+              <!-- seleccionar una tecnologia con chekbox: html,css, js-->
+
+              <h3>Seleccione tecnologias</h3>
+
+              <input
+                type="checkbox"
+                name="tecnologias"
+                id="html"
+                value="html"
+              />
+              <label for="html">HTML</label>
+
+              <input type="checkbox" name="tecnologias" id="css" value="css" />
+              <label for="css">CSS</label>
+
+              <input type="checkbox" name="tecnologias" id="js" value="js" />
+              <label for="js">JS</label>
+            </div>
+            <br />
+            <hr />
+            <div>
+              <!-- * Agregar opciones para navegador:Chrome,Opera,Safari,Firefox, Edge. -->
+
+              <label for="navegador">Seleccion navegador</label>
+              <input list="browser" id="navegador" name="navegador" />
+
+              <datalist id="browser">
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+                <option value="Firefox"></option>
+                <option value="Edge"></option>
+              </datalist>
+            </div>
+            <br />
+
+            <!-- * Agregar área para datos personales con fieldset: teléfono, correo. -->
+
+            <fieldset>
+              <legend>Datos personales</legend>
+              <div>
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" />
+
+                <label for="email">Email</label>
+                <input type="tel" name="email" id="email" />
+              
+            </div>
+
+            </fieldset>
+          </div>
+
+          <hr />
+          <hr />
+          <label for="comentario">Comentario</label>
+          <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="Escriba un comentario"></textarea>
+          <hr>
+          <div>
+            <!-- Agregar los botonos para enviar -->
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+  <!-- Pie de página -->
+  <footer>
+    <h3>Curso Full Stack Python</h3>
+  </footer>
+</html>
